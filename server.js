@@ -12,9 +12,7 @@ const PORT = process.env.PORT || 9000;
 var collection;
 var impressions;
 app.use(bodyParser.json());
-
-const uri = process.env.mongoURI;
-const client = new MongoClient(uri, { useNewUrlParser: true });
+const client = new MongoClient('mongodb://127.0.0.1:27017', { useNewUrlParser: true });
 
 
 app.use(cors());
