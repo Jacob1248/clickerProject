@@ -61,13 +61,11 @@
     right: 0;
     margin-right: 1rem;
     list-style-type: none;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
     padding-bottom: 1rem;
     background-color: #1F1C1C;
     border-radius: 0.8rem;
     display:none;
+    width: 50%;
 }
 
 .mobile-menu li{

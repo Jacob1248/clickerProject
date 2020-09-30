@@ -6,7 +6,7 @@ let labels =  ["Iphone 11", "Flowers", "Chocolate", "Wrench", "Water","Headphone
 export const PieChart = (props) =>{
 
     return(
-<div className="time-series-holder pie-width" style={{marginTop:"1rem",marginLeft:"2rem",marginBottom:"1rem",justifyContent:"initial",paddingBottom:"1rem"}}>
+<div className="time-series-holder pie-width pie-height" style={{marginTop:"1rem",marginLeft:"2rem",marginBottom:"1rem",justifyContent:"initial",paddingBottom:"1rem"}}>
 
         <Pie data={{
       datasets: [

@@ -23,7 +23,6 @@
 
 .time-series-holder{
     width: 48vw;
-    height: calc(48.7vh);
     padding-top: 0.5rem;
     background-color: #252323;
     border-radius: 0.8rem;
@@ -32,6 +31,7 @@
     justify-content: center;
     margin-left: 2rem;
     padding: 0;
+    min-height: fit-content;
 }
 
 .mini-analytics{
@@ -70,8 +70,16 @@
     width:calc(40vw + 2rem)
 }
 
+.pie-height{
+    height: 50vh;
+}
+
+.rank-height{
+    height: calc(50vh + 1rem);
+}
+
 .additional-info{
-    width: 100%;
+    width: calc(100% - 2rem);
     height: 47%;
     margin-bottom: 3%;
     display: flex;

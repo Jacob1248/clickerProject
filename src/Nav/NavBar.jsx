@@ -24,7 +24,7 @@ export const NavBar = (props) =>{
             function f(){
                 if(openMenu!=-1){
                     if(openMenu===true){
-                        g.to('.mobile-menu',{display:"initial",duration:0},0)
+                        g.to('.mobile-menu',{display:"flex",duration:0},0)
                     }
                     else{
                         g.to('.mobile-menu',{display:"none",duration:0},0)
@@ -52,7 +52,7 @@ export const NavBar = (props) =>{
             <div className="hamburger-menu-holder" style={{margin:"auto 0"}} >            
                 <button className="hamburger" onClick={()=>changeMenuState()} ><i className="fa fa-bars fa-lg" style={{color:"white"}}></i></button>
                     <ul className="mobile-menu" >
-                        <li ><a href="Admin">Admin Console</a></li>
+                        <li style={{marginLeft:"1rem"}}><a href="Admin">Admin Console</a></li>
                     </ul>
             </div>
         </nav>

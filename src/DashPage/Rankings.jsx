@@ -31,7 +31,7 @@ export const Rankings = (props) =>{
 
     return(
 
-        <div className="time-series-holder" style={{marginTop:"1rem",marginLeft:"2rem",justifyContent:"initial",textAlign:"left",backgroundColor:"transparent"}}>
+        <div className="time-series-holder rank-height" style={{marginTop:"1rem",marginLeft:"2rem",justifyContent:"initial",textAlign:"left",backgroundColor:"transparent"}}>
             <div className="additional-info">
                 <span className="analytics-header" style={{color: "#A850DD",fontSize:"1.2rem",marginTop:"1rem"}}>Database Information</span>
                 <span style={{margin:"auto 0",marginLeft:"1rem"}}>Database name : clickbase</span>
