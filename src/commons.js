@@ -1,0 +1,1 @@
+export const host = `https://movieee-night.herokuapp.com`

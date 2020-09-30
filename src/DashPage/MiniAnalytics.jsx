@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from 'react';
 import "./DashPage.css"
 import { Chart } from "react-charts";
 import { API_GET } from '../APICall';
+import { host } from '../commons';
 
 export const MiniAnalytics = (props) =>{
 
@@ -9,7 +10,7 @@ export const MiniAnalytics = (props) =>{
 
     let g = gsap.timeline()
 
-    let [count,setCount] = useState('Loading...');
+    let [count,setCount] = useState('NA');
 
     let infoHolderRef = null;
 
@@ -17,8 +18,8 @@ export const MiniAnalytics = (props) =>{
         ()=>{
             
            async  function f(){
-               if(count==='Loading...'&&props.doAPICall==true){
-                let result = await API_GET(`http://127.0.0.1:9000${props.route}`);
+               if(count==='NA'&&props.doAPICall==true){
+                let result = await API_GET(`${host}${props.route}`);
                 if(result.status === 200){
                     let jsonResponse = await result.json();
                     setCount(jsonResponse.count);

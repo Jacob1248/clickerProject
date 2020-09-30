@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from 'react';
 import "./ProductPage.css";
 import { API_POST } from '../APICall';
+import { host } from '../commons';
 
 export const ProductPage = () =>{
 
@@ -22,7 +23,7 @@ export const ProductPage = () =>{
     const impressed = async () =>{
         if(impression==false){
             let clickData = {
-                url:'http://127.0.0.1:9000/setImpression',
+                url:`${host}/setImpression`,
                 payload:{
                 }
             }
