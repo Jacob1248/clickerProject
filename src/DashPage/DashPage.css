@@ -1,0 +1,114 @@
+.admin{
+    width: 100vw;
+    height: auto;
+    padding-top: 15vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.multi-analytics-holder{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin-left: 2rem;
+    float: left;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.time-series-holder{
+    width: 48vw;
+    height: calc(48.7vh);
+    padding-top: 0.5rem;
+    background-color: #252323;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    padding: 0;
+}
+
+.mini-analytics{
+    width: 47%;
+    height: 46%;
+    background-color: #252323;
+    border-radius: 0.8rem;
+    color: white;
+    position: relative;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-holder{
+    border-radius: 0.8rem;
+    color: white;
+    background-color: #121212;
+    font-size: 0.9rem;
+    bottom: 0;
+    position: absolute;
+    display: none;
+    height: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: calc(100% - 1rem);
+}
+
+.analytics-header{
+    width: 90%;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.pie-width{
+    width:calc(40vw + 2rem)
+}
+
+.additional-info{
+    width: 100%;
+    height: 47%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    background-color: #252323;
+    justify-content: space-between;
+    border-radius: 0.8rem;
+}
+
+@media only screen and (max-width:1023px){
+    .multi-analytics-holder{
+        width: calc(90vw - 2rem);
+        margin-left: 2rem;
+        min-height: fit-content;
+    }
+    
+    .time-series-holder{
+        width: calc(90vw - 2rem);
+        margin-left: 2rem;
+    }
+    .mini-analytics{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .admin{
+        flex-direction: column;
+    }
+    .pie-width{
+        width: calc(90vw - 2rem);
+        margin-left: 1rem;
+    }
+
+
+.additional-info{
+    width: calc(90vw - 2rem);
+    min-height: fit-content;
+}
+}
+    

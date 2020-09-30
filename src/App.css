@@ -1,0 +1,11 @@
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  background-color: #2E2D2D;
+}
